@@ -1,0 +1,91 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Jewel & Luxury)",
+  "brand": {
+    "name": "Modi's Boutique",
+    "location": "Ranchi, Jharkhand",
+    "target_audience": "Women aged 18-35",
+    "seo_keywords": ["bridal shop Ranchi", "bridal lehenga Ranchi", "best boutique in Ranchi"]
+  },
+  "colors": {
+    "background_primary": "#0A0A0A",
+    "background_secondary": "#1A0A0E",
+    "text_primary": "#FDFBF7",
+    "text_secondary": "#A39B8B",
+    "accent_primary": "#D4AF37",
+    "accent_secondary": "#B76E79",
+    "border": "rgba(212, 175, 55, 0.15)",
+    "glass_bg": "rgba(10, 10, 10, 0.6)"
+  },
+  "typography": {
+    "headings": "Playfair Display, serif",
+    "body": "Outfit, sans-serif",
+    "overline": "uppercase tracking-[0.2em] text-xs text-[#D4AF37]",
+    "h1_class": "text-5xl md:text-6xl lg:text-7xl font-normal tracking-tight",
+    "h2_class": "text-3xl md:text-4xl lg:text-5xl font-normal tracking-tight",
+    "h3_class": "text-xl md:text-2xl font-normal"
+  },
+  "layout_spacing": {
+    "section_padding": "py-24 md:py-32",
+    "container_class": "max-w-7xl mx-auto px-6 md:px-12",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8"
+  },
+  "visual_enhancers": {
+    "hero_overlay": "bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/50 to-[#0A0A0A]/10",
+    "glassmorphism": "backdrop-blur-xl bg-[#0A0A0A]/60 border border-white/5 shadow-2xl",
+    "hover_effects": "transition-all duration-500 hover:scale-105",
+    "animations": "Use framer-motion for slow, elegant reveals (duration 0.8s, ease out, y: 20 to 0)"
+  },
+  "components": {
+    "header": "Sticky glassmorphism header with clear navigation and 'Book Appointment' CTA button. z-50",
+    "floating_whatsapp": "Fixed bottom-right button, standard WhatsApp green (#25D366) or gold matching theme, z-50. Include pulse animation.",
+    "google_rating_badge": "Display 4.6 stars, 991 reviews. Use lucide-react star icons (4 full, 1 half). Place in Hero section or Header to build trust.",
+    "faq_accordion": "Use Shadcn UI Accordion. Customize with transparent backgrounds, gold-tinted bottom borders, and elegant typography.",
+    "collection_card": "Image focused cards. Use absolute positioning for text at the bottom. Apply gradient overlay on image hover for readability.",
+    "buttons": "Primary: bg-[#D4AF37] text-black font-medium hover:bg-[#F3D56D] transition-colors. Secondary: transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37]/10"
+  },
+  "image_urls": {
+    "hero_banner": {
+      "url": "https://images.unsplash.com/photo-1610173826014-d131b02d69ca?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBicmlkZSUyMHBvcnRyYWl0fGVufDB8fHx8MTc3NTcxMjU0NXww&ixlib=rb-4.1.0&q=85",
+      "description": "Elegant woman in red and gold sari - Use as Hero Background"
+    },
+    "collection_lehengas": {
+      "url": "https://images.unsplash.com/photo-1711130388758-2ccf44bb735c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBicmlkYWwlMjBsZWhlbmdhfGVufDB8fHx8MTc3NTcxMjUzNHww&ixlib=rb-4.1.0&q=85",
+      "description": "Woman in red and gold bridal lehenga - Use for Featured Lehengas"
+    },
+    "collection_sarees": {
+      "url": "https://images.unsplash.com/photo-1727430228383-aa1fb59db8bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHx3ZWRkaW5nJTIwc2FyZWV8ZW58MHx8fHwxNzc1NzEyNTQ1fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Woman in beautiful sari - Use for Sarees Collection"
+    },
+    "collection_gowns": {
+      "url": "https://images.unsplash.com/photo-1722952908681-944d47e45853?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBicmlkZSUyMHBvcnRyYWl0fGVufDB8fHx8MTc3NTcxMjU0NXww&ixlib=rb-4.1.0&q=85",
+      "description": "Woman in red and white wedding outfit - Use for Gowns/Suits"
+    },
+    "collection_accessories": {
+      "url": "https://images.unsplash.com/flagged/photo-1570055349452-29232699cc63?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBqZXdlbHJ5fGVufDB8fHx8MTc3NTcxMjU0NHww&ixlib=rb-4.1.0&q=85",
+      "description": "Gold colored necklace - Use for Accessories"
+    },
+    "about_interior": {
+      "url": "https://images.unsplash.com/photo-1765009433753-c7462637d21f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBib3V0aXF1ZSUyMGludGVyaW9yfGVufDB8fHx8MTc3NTcxMjUzNHww&ixlib=rb-4.1.0&q=85",
+      "description": "Modern clothing store interior - Use in About Us section"
+    },
+    "about_detail": {
+      "url": "https://images.unsplash.com/photo-1724856604403-60304b28906c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBicmlkYWwlMjBsZWhlbmdhfGVufDB8fHx8MTc3NTcxMjUzNHww&ixlib=rb-4.1.0&q=85",
+      "description": "Close up of red and gold dress detail - Use as secondary image in About Us or Services"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install and configure 'Playfair Display' and 'Outfit' fonts from Google Fonts.",
+    "Implement smooth scrolling using Lenis (lenis library).",
+    "Use Framer Motion for scroll-triggered entrance animations (fade up & slight scale).",
+    "Create a purely dark theme application, do not build a light mode toggle. The brand identity is strictly dark and moody.",
+    "Do NOT use Inter for headings. Keep the luxury editorial aesthetic.",
+    "Build a 'Bento Grid' for the Services/Collections section. Make the Lehenga card prominent (e.g. col-span-8 on md).",
+    "Add 'data-testid' to all interactive elements (buttons, nav links, form inputs) to support testing.",
+    "Embed a generic Google Maps iframe in the Contact section with a dummy Ranchi address.",
+    "Ensure image overlays do not exceed 50% opacity in hero so the photography shines, but use gradients to ensure text readability.",
+    "For the Testimonials section, create highly styled text reviews that highlight the 4.6 star Google rating.",
+    "Implement a dedicated FAQ section using Shadcn Accordion component.",
+    "Ensure the entire website is built in single or multiple pages but structured well. Since it's a marketing site, a long scrolling landing page with sections (Home, About, Services, FAQ, Contact) mapped to nav links via IDs is preferred, but separate routes are fine too."
+  ]
+}
