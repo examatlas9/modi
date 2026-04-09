@@ -71,7 +71,7 @@ export default function About() {
               <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl lg:text-5xl font-normal text-[#FDFBF7] leading-tight">
                 Dressing Ranchi's Brides
                 <br />
-                <em className="text-[#D4AF37] not-italic">Since a Decade</em>
+                <em className="text-[#D4AF37] not-italic">For Over 15 Years</em>
               </h2>
             </FadeUp>
 

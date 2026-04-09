@@ -51,12 +51,13 @@ const COLLECTIONS = [
   },
 ];
 
-function FadeUp({ children, delay = 0 }) {
+function FadeUp({ children, delay = 0, className = "" }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
   return (
     <motion.div
       ref={ref}
+      className={className}
       initial={{ opacity: 0, y: 30 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, delay, ease: "easeOut" }}
@@ -97,10 +98,10 @@ export default function Collections() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-5">
           {/* Row 1 */}
           {COLLECTIONS.slice(0, 2).map((col, i) => (
-            <FadeUp key={col.id} delay={i * 0.1}>
+            <FadeUp key={col.id} delay={i * 0.1} className={col.span}>
               <div
                 data-testid={`collection-card-${col.id}`}
-                className={`collection-card relative rounded-2xl overflow-hidden cursor-pointer group ${col.height} ${col.span}`}
+                className={`collection-card relative rounded-2xl overflow-hidden cursor-pointer group ${col.height} w-full`}
               >
                 <img
                   src={col.img}
@@ -131,10 +132,10 @@ export default function Collections() {
 
           {/* Row 2 */}
           {COLLECTIONS.slice(2).map((col, i) => (
-            <FadeUp key={col.id} delay={i * 0.1 + 0.2}>
+            <FadeUp key={col.id} delay={i * 0.1 + 0.2} className={col.span}>
               <div
                 data-testid={`collection-card-${col.id}`}
-                className={`collection-card relative rounded-2xl overflow-hidden cursor-pointer group ${col.height} ${col.span}`}
+                className={`collection-card relative rounded-2xl overflow-hidden cursor-pointer group ${col.height} w-full`}
               >
                 <img
                   src={col.img}
